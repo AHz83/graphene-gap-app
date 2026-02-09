@@ -152,8 +152,8 @@ col3.metric("qmax / nq", f"{qmax:.2f} / {nq}")
 # Plot: Eg vs Delta
 # -----------------------------
 fig = plt.figure()
-plt.plot(Delta_vals, Eg_num, marker="o", label="گاف عددی")
-plt.plot(Delta_vals, Eg_th, linestyle="--", label="رابطه نظری Eg = 2|Δ|")
+plt.plot(Delta_vals, Eg_num, marker="o", label="gap")
+plt.plot(Delta_vals, Eg_th, linestyle="--", label="Eg = 2|Δ|")
 plt.xlabel("Δ (eV)")
 plt.ylabel("Eg (eV)")
 plt.title("باز شدن گاف انرژی بر اثر شکستن تقارن زیرشبکه‌ها")
@@ -246,3 +246,4 @@ conclusion = """
 و وابستگی آن با پیش‌بینی نظری هم‌خوانی دارد.
 """
 st.markdown(rtl(conclusion), unsafe_allow_html=True)
+
