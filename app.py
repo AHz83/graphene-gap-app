@@ -156,7 +156,7 @@ plt.plot(Delta_vals, Eg_num, marker="o", label="gap")
 plt.plot(Delta_vals, Eg_th, linestyle="--", label="Eg = 2|Δ|")
 plt.xlabel("Δ (eV)")
 plt.ylabel("Eg (eV)")
-plt.title("باز شدن گاف انرژی بر اثر شکستن تقارن زیرشبکه‌ها")
+plt.title("gap")
 plt.grid(True)
 plt.legend()
 st.pyplot(fig)
@@ -246,4 +246,5 @@ conclusion = """
 و وابستگی آن با پیش‌بینی نظری هم‌خوانی دارد.
 """
 st.markdown(rtl(conclusion), unsafe_allow_html=True)
+
 
